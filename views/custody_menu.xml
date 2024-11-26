@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="custom_custody_root" name="Custody"
+              web_icon="custom_custody,static/description/icon.png"/>
+    <menuitem id="custody_menu" name="Custody" parent="custom_custody_root" action="action_custody" sequence="1"/>
+    <menuitem id="custody_property_menu" name="Property" action="action_custody_property" parent="custom_custody_root"
+    sequence="2"/>
+    <menuitem id="custody_property_type_menu" name="Property Type" parent="custom_custody_root"
+              action="action_property_type" sequence="3"/>
+</odoo>

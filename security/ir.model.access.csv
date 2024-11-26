@@ -1,0 +1,8 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_property_type_admin,property type,model_custody_property_type,group_custody_admin,1,1,1,1
+access_property_admin,custody property,model_custody_property,group_custody_admin,1,1,1,1
+access_custody_admin,custody,model_custody,group_custody_admin,1,1,1,1
+
+access_retun_date_wizard,retun date wizard,model_property_return_date_wizard,group_custody_admin,1,1,1,1
+
+access_custody_user,custody,model_custody,group_custody_user,1,0,0,0

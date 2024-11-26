@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Record rule for Custody Admin (No restriction) -->
+    <record id="custody_admin_rule" model="ir.rule">
+        <field name="name">Custody Admin Rule</field>
+        <field name="model_id" ref="model_custody"/>
+        <field name="groups" eval="[(4, ref('group_custody_admin'))]"/>
+        <field name="domain_force">[]</field> <!-- No domain, so Admin sees all records -->
+    </record>
+
+    <!-- Record rule for Custody User (Can only see their own custody) -->
+    <record id="custody_user_rule" model="ir.rule">
+        <field name="name">Custody User Rule</field>
+        <field name="model_id" ref="model_custody"/>
+        <field name="groups" eval="[(4, ref('group_custody_user'))]"/>
+        <field name="domain_force">[('employee_id', '=', user.employee_id.id)]</field> <!-- Filter records by employee_id -->
+    </record>
+</odoo>

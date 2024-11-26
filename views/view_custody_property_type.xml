@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_property_type_tree" model="ir.ui.view">
+        <field name="name">property.type.tree</field>
+        <field name="model">custody.property.type</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name" required="1"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_property_type" model="ir.actions.act_window">
+        <field name="name">Property type</field>
+        <field name="res_model">custody.property.type</field>
+        <field name="view_mode">tree</field>
+    </record>
+</odoo>
