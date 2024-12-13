@@ -12,6 +12,7 @@ class PropertyReturnDateWizard(models.TransientModel):
             # Write the hold_date to the Approval Request's hold_date field
             self.custody_id.write({
                 'return_date': self.return_date,
-                'state': 'withdraw'
+                'state': 'withdraw',
             })
+
 

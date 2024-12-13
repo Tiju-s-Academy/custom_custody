@@ -3,7 +3,7 @@
     'version': '17.0.1.0',
     'author': 'Tijus Academy',
     'summary': 'Handle Properties of Employees where given as from the office',
-    'depends': ['base','hr'],
+    'depends': ['base', 'hr'],
     'data': [
         'security/custody_group.xml',
         'security/ir.model.access.csv',
@@ -18,4 +18,5 @@
     ],
     'application': True,
     'license': 'LGPL-3',
+
 }
